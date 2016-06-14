@@ -4,7 +4,7 @@ Click the button below to ask a question other you or other users can answer, or
 
 <ul>
   {{#each model as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    {{answer-tile answer=answer update="update" destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>
 
