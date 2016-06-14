@@ -4,4 +4,11 @@ import Ember from 'ember';
     model() {
       return this.store.findAll('answer');
     },
+
+    actions: {
+      destroyAnswer(answer) {
+        answer.destroyRecord();
+        this.transitionTo('index');
+      }
+    }
 });

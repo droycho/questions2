@@ -4,8 +4,8 @@ Click the button below to ask a question other you or other users can answer, or
 
 <ul>
   {{#each model as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}  
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
 </ul>
 
 {{#link-to 'about'}}About{{/link-to}}
