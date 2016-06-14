@@ -2,5 +2,11 @@
 
 Click the button below to ask a question other you or other users can answer, or click one of the questions below to see if it has any answers or provide one yourself.
 
+<ul>
+  {{#each model as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}  
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact{{/link-to}}
