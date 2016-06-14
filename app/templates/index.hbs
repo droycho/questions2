@@ -2,13 +2,23 @@
 
 Click the button below to ask a question other you or other users can answer, or click one of the questions below to see if it has any answers or provide one yourself.
 
+<h2>Questions:</h2>
+
 <ul>
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+<!-- {{new-question saveQuestion="saveQuestion"}} -->
+<hr>
+
+<!-- <ul>
   {{#each model as |answer|}}
     {{answer-tile answer=answer update="update" destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>
 
-{{new-answer save2="save3"}}
+{{new-answer save2="save3"}} -->
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact{{/link-to}}

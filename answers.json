@@ -8,5 +8,14 @@
   }, {
     "author": "Another Body",
     "content": "Another test answer. Should show up alone with this question."
-    }]
+  }],
+  "questions": [{
+    "title": "What color is the sky?",
+    "user": "DJ Roychoudhury",
+    "notes": "I would like to know what is the actual color of the sky and what gives it that color."
+  }, {
+    "title": "How many cow to people are there in Wyoming?",
+    "user": "Scotty Pippen",
+    "notes": "There must be more cows to people in Wyoming, anyone know the exact number?"
+  }]
 }
