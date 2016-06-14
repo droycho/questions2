@@ -9,16 +9,8 @@ Click the button below to ask a question other you or other users can answer, or
     <li>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
-<!-- {{new-question saveQuestion="saveQuestion"}} -->
+{{new-question saveQuestion2="saveQuestion3"}}
 <hr>
-
-<!-- <ul>
-  {{#each model as |answer|}}
-    {{answer-tile answer=answer update="update" destroyAnswer="destroyAnswer"}}
-  {{/each}}
-</ul>
-
-{{new-answer save2="save3"}} -->
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact{{/link-to}}
