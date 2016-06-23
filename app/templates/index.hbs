@@ -6,7 +6,7 @@ Click the button below to ask a question other you or other users can answer, or
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</li>
+    <li>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.title}}{{/link-to}} <br> Total answers: {{totalAnswers}}</li>
   {{/each}}
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}
