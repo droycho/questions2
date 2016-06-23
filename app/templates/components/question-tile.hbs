@@ -7,6 +7,5 @@ Answers to {{question.user}}'s question:
 <ul>
   {{#each question.answers as |answer|}}
     <li>{{#link-to 'answer' answer.id}}{{answer.author}}'s answer.{{/link-to}}</li>
+  {{/each}}  
 </ul>
-
-<button {{action 'destroyQuestion' question}}>Delete</button>
