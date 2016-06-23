@@ -1,11 +1,13 @@
-{{question.title}}
-
-Author: {{question.user}}
-
-Answers to {{question.user}}'s question:
-
+<strong>Author:</strong> {{question.user}}
+<br>
+<strong>Original Question:</strong> {{question.title}}
+<br>
+<strong>Further explanation:</strong> {{question.notes}}
+<br>
+<strong>Answers to {{question.user}}'s question:</strong>
+<br>
 <ul>
   {{#each question.answers as |answer|}}
     <li>{{#link-to 'answer' answer.id}}{{answer.author}}'s answer.{{/link-to}}</li>
-  {{/each}}  
+  {{/each}}
 </ul>
