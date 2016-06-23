@@ -1,16 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoritesList: Ember.inject.service(),
 
-  totalAnswers: Ember.computed(question.get('answers').get('length'), function() {
-    return this.get(question.get('answers').get('length'));
-  }),
+//for can't figure out how to get the computed property of one model property, all examples are for computing new proprty from two or more other properties. just want the total number of answers each question has.
+
+  // totalAnswers: Ember.computed(this.question.answers.length, function() {
+  //   return this.get(this.question.answers.length);
+  // }),
 
   actions: {
     destroyQuestion(question) {
       if (confirm('Are you sure you want to destroy this question?')) {
         this.sendAction('destroyQuestion', question);
       }
+    },
+
+    addToList(question) {
+      this.get('favoritesList').add(question);
     }
   }
 });
