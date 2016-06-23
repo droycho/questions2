@@ -11,7 +11,10 @@ Aks a question in the field below either you or other users can answer, or click
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}
 <hr>
-{{display-list question=model}} <!--how do i display the list here? -->
+Favorite Questions:
+<ul>
+  {{display-list question=model}}
+</ul>
 <hr>
 
 {{#link-to 'about'}}About{{/link-to}}
