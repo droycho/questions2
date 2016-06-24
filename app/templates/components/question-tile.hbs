@@ -1,6 +1,5 @@
 <button {{action 'addToList' question}}>Mark as Favorite</button>
-<br>
-Total Answers: {{totalAnswers}}
+<br> Total Answers: {{totalAnswers}}
 <br>
 <strong>Author:</strong> {{question.user}}
 <br>
@@ -12,6 +11,8 @@ Total Answers: {{totalAnswers}}
 <br>
 <ul>
   {{#each question.answers as |answer|}}
-    <li>{{#link-to 'answer' answer.id}}{{answer.author}}'s answer.{{/link-to}}</li>
+    <li>
+      {{#link-to 'answer' answer.id}}{{answer.author}}'s answer.{{/link-to}}
+    </li>
   {{/each}}
 </ul>

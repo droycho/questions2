@@ -1,21 +1,21 @@
-<h1> Welcome to My Question Board </h1>
-
-Aks a question in the field below either you or other users can answer, or click one of the questions below to see if it has any answers or provide one yourself.
+<h1> Welcome to My Question Board </h1> Aks a question in the field below either you or other users can answer, or click one of the questions below to see if it has any answers or provide one yourself.
 
 <h2>Questions:</h2>
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</li>
+    <li>{{question-popularity question}}
+      {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
+    </li>
   {{/each}}
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}
-<hr>
-Favorite Questions:
+<hr> Favorite Questions:
 <ul>
   {{display-list question=model}}
 </ul>
 <hr>
 
 {{#link-to 'about'}}About{{/link-to}}
+<br>
 {{#link-to 'contact'}}Contact{{/link-to}}
