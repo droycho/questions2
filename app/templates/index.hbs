@@ -6,7 +6,7 @@ Aks a question in the field below either you or other users can answer, or click
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.title}}{{/link-to}} <br> Total answers: {{totalAnswers}}</li>
+    <li>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}
